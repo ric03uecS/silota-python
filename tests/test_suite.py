@@ -119,6 +119,7 @@ class Suite(WSGIServerTest):
 
             with self.start_search_server(search_app):
                 for eng in engines:
+                    print eng
                     payload = eng.build_payload()
                     print payload
 
